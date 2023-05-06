@@ -1,0 +1,32 @@
+$almost-white: hsl(0, 0%, 98%);
+$medium-gray: hsl(0, 0%, 41%);
+$almost-black: hsl(0, 0%, 8%);
+
+@import "../node_modules/bootstrap/scss/functions";
+
+:root {
+    font-size: 18px;
+}
+
+$custom-colors: (
+  "almost-white": $almost-white,
+  "medium-gray": $medium-gray,
+  "almost-black": $almost-black
+);
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: Epilogue;
+    src: url(Epilogue.ttf);
+};
+
+@font-face {
+    font-family: Epilogue-Italic;
+    src: url(Epilogue-Italic.ttf);
+};
