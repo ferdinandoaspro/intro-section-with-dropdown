@@ -7,12 +7,33 @@
   <link rel="stylesheet" href="dist/styles.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
-<body>
+<body class="d-flex flex-column text-medium-gray">
   <header>
-    <p>snap</p>
-    <p><img src="images/icon-menu.svg" alt=""></p>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <p class="navbar-brand text-almost-black fw-bold fs-1">snap</p>
+        <button class="navbar-toggler" type="button">
+          <img src="images/icon-menu.svg" alt="#">
+        </button>
+      </div>
+    </nav>
   </header>
-  <main>
+  <main class="container-fluid p-0">
+    <img src="images/image-hero-mobile.png" alt="#" class="w-100">
+    <div class="flex flex-column text-center">
+      <h1 class="text-almost-black fw-bold fs-1">Make Remote Work</h1>
+      <p>
+        Get your team in sync, no matter your location.
+        Streamline processes, create team rituals, and watch productivity soar.
+      </p>
+      <button type="button" class="bg-almost-black text-almost-white">Learn more</button>
+      <div class="d-flex flex-row text-center justify-content-around">
+        <img src="images/client-databiz.svg" alt="Databiz" class="logo">
+        <img src="images/client-audiophile.svg" alt="Audiophile" class="logo">
+        <img src="images/client-meet.svg" alt="Meet" class="logo">
+        <img src="images/client-maker.svg" alt="Maker" class="logo">
+      </div>
+    </div>
   </main>
   <script type="module" src="node_modules/@popperjs/core/lib/popper.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
