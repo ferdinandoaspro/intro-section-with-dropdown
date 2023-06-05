@@ -7,31 +7,47 @@
   <link rel="stylesheet" href="dist/styles.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
-<body class="d-flex flex-column text-medium-gray">
+<body class="text-medium-gray">
   <header>
     <nav class="navbar">
-      <div class="container-fluid">
-        <p class="navbar-brand text-almost-black fw-bold fs-1">snap</p>
-        <button class="navbar-toggler" type="button">
-          <img src="images/icon-menu.svg" alt="#">
+      <div class="container-fluid mx-0">
+        <img src="images/logo.svg" class="" alt="Snap logo">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Company</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <img src="images/icon-menu.svg" alt="#" aria-disabled="true">
         </button>
       </div>
     </nav>
   </header>
-  <main class="container-fluid p-0">
-    <img src="images/image-hero-mobile.png" alt="#" class="w-100">
-    <div class="flex flex-column text-center">
-      <h1 class="text-almost-black fw-bold fs-1">Make Remote Work</h1>
+  <main class="container-fluid d-flex flex-column px-0 mx-0">
+    <img src="images/image-hero-mobile.png" alt="#" class="w-100 mb-1" aria-disabled="true">
+    <div class="d-flex flex-column text-center px-3">
+      <h1 class="text-almost-black fw-bold mt-4 mb-3">Make Remote Work</h1>
       <p>
-        Get your team in sync, no matter your location.
-        Streamline processes, create team rituals, and watch productivity soar.
+        Get your team in sync, no matter your </br>location.
+        Streamline processes, create </br>team rituals, and watch productivity soar.
       </p>
-      <button type="button" class="bg-almost-black text-almost-white">Learn more</button>
-      <div class="d-flex flex-row text-center justify-content-around">
-        <img src="images/client-databiz.svg" alt="Databiz" class="logo">
-        <img src="images/client-audiophile.svg" alt="Audiophile" class="logo">
-        <img src="images/client-meet.svg" alt="Meet" class="logo">
-        <img src="images/client-maker.svg" alt="Maker" class="logo">
+      <button type="button" class="bg-almost-black text-almost-white fw-bold py-2 px-3">Learn more</button>
+      <div class="d-flex flex-row justify-content-evenly">
+        <img src="images/client-databiz.svg" alt="Databiz logo">
+        <img src="images/client-audiophile.svg" alt="Audiophile logo">
+        <img src="images/client-meet.svg" alt="Meet logo">
+        <img src="images/client-maker.svg" alt="Maker logo">
       </div>
     </div>
   </main>
