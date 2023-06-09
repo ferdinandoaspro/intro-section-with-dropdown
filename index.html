@@ -9,40 +9,67 @@
 </head>
 <body class="text-medium-gray">
   <header>
-    <nav class="navbar">
-      <div class="container-fluid mx-0">
-        <img src="images/logo.svg" class="" alt="Snap logo">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Company</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Careers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid d-flex flex-row mx-0">
+        <a href="#" class="navbar-brand">
+          <img src="images/logo.svg" class="" alt="Snap logo">
+        </a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offCanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" href="#" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Features</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"><img src="./images/icon-todo.svg" alt="#"><span>Todo List</span></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><img src="./images/icon-calendar.svg" alt="#"><span>Calendar</span></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><img src="./images/icon-reminders.svg" alt="#"><span>Reminders</span></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><img src="./images/icon-planning.svg" alt="#"><span>Planning</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" href="#" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false">Company</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">History</a></li>
+                  <li><a class="dropdown-item" href="#">Our Team</a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <div class="d-flex flex-column flex-lg-row gap-1 px-2">
+              <button type="button" class="btn text-medium-gray">Login</button>
+              <button type="button" class="btn border">Register</button>
+            </div>
+          </div>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasNavbar" aria-controls="offcanvasNavbar">
           <img src="images/icon-menu.svg" alt="#" aria-disabled="true">
         </button>
       </div>
     </nav>
   </header>
   <main class="container-fluid d-flex flex-column px-0 mx-0">
-    <img src="images/image-hero-mobile.png" alt="#" class="w-100 mb-1" aria-disabled="true">
-    <div class="d-flex flex-column text-center px-3">
-      <h1 class="text-almost-black fw-bold mt-4 mb-3">Make Remote Work</h1>
+    <img src="images/image-hero-mobile.png" alt="#" class="w-100 mb-2" aria-disabled="true">
+    <div class="text-center p-2">
+      <h1 class="text-almost-black fw-bold my-3">Make remote work</h1>
       <p>
-        Get your team in sync, no matter your </br>location.
-        Streamline processes, create </br>team rituals, and watch productivity soar.
+        Get your team in sync, no matter your location.
+        Streamline processes, create team rituals, and watch productivity soar.
       </p>
-      <button type="button" class="bg-almost-black text-almost-white fw-bold py-2 px-3">Learn more</button>
+      <button type="button" class="bg-almost-black text-almost-white fw-bold py-2 px-4">Learn more</button>
       <div class="d-flex flex-row justify-content-evenly">
         <img src="images/client-databiz.svg" alt="Databiz logo">
         <img src="images/client-audiophile.svg" alt="Audiophile logo">
@@ -51,7 +78,7 @@
       </div>
     </div>
   </main>
-  <script type="module" src="node_modules/@popperjs/core/lib/popper.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

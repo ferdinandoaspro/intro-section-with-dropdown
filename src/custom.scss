@@ -21,12 +21,12 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @font-face {
     font-family: "Epilogue";
-    src: url("Epilogue.ttf");
+    src: url("../src/Epilogue.ttf");
     };
 
 @font-face {
     font-family: "Epilogue-Italic";
-    src: url("Epilogue-Italic.ttf");
+    src: url("../src/Epilogue-Italic.ttf");
     };
 
 :root {
@@ -37,15 +37,17 @@ body {
     height: 100dvh;
     width: 100vw;
     max-width: 100%;
+    font-weight: 500;
 
     main {
         div {
             h1 {
-                font-size: 1.9rem;
+                font-size: 1.88rem;
             }
 
             p {
-                font-size: 0.90rem;
+                font-family: "Epilogue", sans-serif;
+                font-size: 0.9rem;
             }
 
             button.bg-almost-black {
@@ -57,8 +59,11 @@ body {
             div.justify-content-evenly {
                 img {
                     height: auto;
-                    width: clamp(60px, 19%, 114px);
+                    width: clamp(60px, 22%, 102px);
                     object-fit: contain;
+                }
+                img:nth-child(2) {
+                    width: clamp(45px, 16%, 86px);
                 }
             }
         }
@@ -67,4 +72,13 @@ body {
 
 button {
     cursor: pointer;
+    color: $medium-gray !important;
+}
+
+li > a {
+    color: $medium-gray !important;
+}
+
+#offCanvasNavbar {
+    width: 245px;
 }
